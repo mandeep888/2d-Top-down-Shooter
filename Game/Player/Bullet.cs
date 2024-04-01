@@ -7,7 +7,7 @@ public class Bullet : MonoBehaviour
     private Camera _camera;
 
     private void Awake(){
-        _camera = _camera.main;
+        _camera = Camera.main;
     }
     private void Update(){
         DestroyWhenOffScreen();
