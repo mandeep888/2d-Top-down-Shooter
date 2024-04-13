@@ -44,7 +44,7 @@ public class HealthController : MonoBehaviour
         {
             return;
         }
-        _currentHealth -= amountToAdd;
+        _currentHealth += amountToAdd;
         OnHealthChanged.Invoke();
         if (_currentHealth>0)
         {
